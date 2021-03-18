@@ -57,13 +57,12 @@ changeFontSize('large', 'h1');
 
 //write a function that takes in a DOM element, adn appends it to the arguments <ul>
 
-function appendItem (element) {
-    let newItem = document.createElement(element);
-    let list = document.querySelector('ul');
-
+function appendItem(element) {
+    const newItem = document.createElement(element);
+    const list = document.querySelector('ul');
     list.appendChild(newItem);
-
 }
+
 
 appendItem('img');
 addImage('ul img', 'https://cdn5.vectorstock.com/i/1000x1000/12/04/cartoon-baby-vector-6591204.jpg')
@@ -98,18 +97,23 @@ makeInvisible('#image-3')
 
 function newLineItem(text) {
     let li = document.createElement('li');
-    return li.innerText = text;
+    li.innerText = text;
+    return li;
 }
 
-//newLineItem('Hello World');
+//test it by calling it with some text placing the return value in a variable, and passing it to your append function from step1 of part two
 
-console.log(typeof newLineItem('Hello World'))
+let toAdd = newLineItem('add this new line item');
 
-newToAdd = newLineItem('Hello World')
-
-appendItem(newToAdd)
-//appendItem(newLineItem('Hello World'))
-
+console.log(toAdd)
+// just append 
+const list = document.querySelector('ul');
 
 
-//test it by calling it with some text placing the return value in a variable, and passing it to your append functio nfrom step1 of part two
+// write a function takes in two strings, one header size, one some text, and returns new header of that size
+
+function newHeader(headerSize, text) {
+    let title = document.createElement(headerSize);
+    title.innerText = text;
+    return title;
+}
