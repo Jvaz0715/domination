@@ -77,4 +77,16 @@ function make30(element) {
     image.style.height = '30px';
 }
 
+make30('#image-1');
+make30('#image-2');
+make30('#image-3');
 make30('ul img');
+
+//function that adds invisible class
+
+function makeInvisible(element) {
+    let item = document.querySelector(element);
+    item.className = "invisible";
+}
+
+makeInvisible('#image-3')
