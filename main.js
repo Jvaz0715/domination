@@ -27,3 +27,16 @@ addImage('#image-1', 'https://images.unsplash.com/photo-1603993097397-89c963e325
 addImage('#image-2', 'https://images.unsplash.com/photo-1521063512073-432ce10aed90?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80')
 
 addImage('#image-3', 'https://images.unsplash.com/photo-1505153695651-9366147105f3?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80')
+
+// write function that  removes the last <li> from the arguments UL
+
+function removeLast(){
+    let list = document.querySelector('#arguments');
+
+    list.removeChild(list.lastElementChild);
+}
+
+//call function twice to remove last LI twice
+
+removeLast();
+removeLast();
