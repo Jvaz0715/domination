@@ -60,6 +60,7 @@ changeFontSize('large', 'h1');
 function appendItem(element) {
     const newItem = document.createElement(element);
     const list = document.querySelector('ul');
+    
     list.appendChild(newItem);
 }
 
@@ -103,11 +104,12 @@ function newLineItem(text) {
 
 //test it by calling it with some text placing the return value in a variable, and passing it to your append function from step1 of part two
 
-let toAdd = newLineItem('add this new line item');
+let toAdd = newLineItem('James added this using newLineItem function');
 
 console.log(toAdd)
 // just append 
 const list = document.querySelector('ul');
+list.appendChild(toAdd)
 
 
 // write a function takes in two strings, one header size, one some text, and returns new header of that size
