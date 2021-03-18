@@ -14,7 +14,7 @@ lineThrough();
 
 // write a function that takes in a string representing a dom ELEMENT's id and a string presenting a url. the url should set the image with that id to have that url as its image source
 
-function addImage (imageID, url) {
+function addImage(imageID, url) {
     let image = document.querySelector(imageID);
 
     image.src = url;
@@ -52,3 +52,19 @@ function changeFontSize(fontSize, id) {
 // change font size of something
 
 changeFontSize('large', 'h1');
+
+//Part II
+
+//write a function that takes in a DOM element, adn appends it to the arguments <ul>
+
+function appendItem (element) {
+    let newItem = document.createElement(element);
+    let list = document.querySelector('ul');
+
+    list.appendChild(newItem);
+
+}
+
+appendItem('img');
+addImage('ul img', 'https://cdn5.vectorstock.com/i/1000x1000/12/04/cartoon-baby-vector-6591204.jpg')
+
