@@ -68,3 +68,13 @@ function appendItem (element) {
 appendItem('img');
 addImage('ul img', 'https://cdn5.vectorstock.com/i/1000x1000/12/04/cartoon-baby-vector-6591204.jpg')
 
+
+//function takes in an image element and makes its height 30 px
+
+function make30(element) {
+    let image = document.querySelector(element);
+
+    image.style.height = '30px';
+}
+
+make30('ul img');
