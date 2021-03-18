@@ -40,3 +40,15 @@ function removeLast(){
 
 removeLast();
 removeLast();
+
+//write a function that takes in two strings
+
+function changeFontSize(fontSize, id) {
+    let toChange = document.querySelector(id);
+
+    toChange.style.fontSize = fontSize;
+}
+
+// change font size of something
+
+changeFontSize('large', 'h1');
