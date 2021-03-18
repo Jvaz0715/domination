@@ -90,3 +90,26 @@ function makeInvisible(element) {
 }
 
 makeInvisible('#image-3')
+
+
+// Part 3
+
+//write function takes in text and returns a new <li> with that text as its inner text
+
+function newLineItem(text) {
+    let li = document.createElement('li');
+    return li.innerText = text;
+}
+
+//newLineItem('Hello World');
+
+console.log(typeof newLineItem('Hello World'))
+
+newToAdd = newLineItem('Hello World')
+
+appendItem(newToAdd)
+//appendItem(newLineItem('Hello World'))
+
+
+
+//test it by calling it with some text placing the return value in a variable, and passing it to your append functio nfrom step1 of part two
