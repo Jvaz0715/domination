@@ -136,6 +136,8 @@ const lorem = document.querySelectorAll("#copy p");
 
 // loop through variable to change all copy paragraphs to red
 
-for (let i = 0; i < lorem.length; i++) {
+/*for (let i = 0; i < lorem.length; i++) {
     lorem[i].style.color = "red";
 }
+
+lorem[1].style.backgroundColor = "green";*/
