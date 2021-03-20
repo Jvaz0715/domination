@@ -123,3 +123,19 @@ function newHeader(headerSize, text) {
 const body = document.querySelector('body');
 let titleToAdd = newHeader('h2', 'This is the title James added')
 body.appendChild(titleToAdd)
+
+
+//================Home Practice=================
+
+
+//change color of copy
+
+//declare the section as a variable
+
+const lorem = document.querySelectorAll("#copy p");
+
+// loop through variable to change all copy paragraphs to red
+
+for (let i = 0; i < lorem.length; i++) {
+    lorem[i].style.color = "red";
+}
